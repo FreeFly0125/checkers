@@ -71652,6 +71652,17 @@ definitions:
     properties:
       gameIndex:
         type: string
+  mycheckers.mycheckers.MsgPlayMoveResponse:
+    type: object
+    properties:
+      capturedX:
+        type: integer
+        format: int32
+      capturedY:
+        type: integer
+        format: int32
+      winner:
+        type: string
   mycheckers.mycheckers.Params:
     type: object
     description: Params defines the parameters for the module.
