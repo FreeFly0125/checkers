@@ -1,0 +1,12 @@
+syntax = "proto3";
+package mycheckers.mycheckers;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "myCheckers/x/mycheckers/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

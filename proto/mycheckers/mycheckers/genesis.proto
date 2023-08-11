@@ -1,0 +1,12 @@
+syntax = "proto3";
+package mycheckers.mycheckers;
+
+import "gogoproto/gogo.proto";
+import "mycheckers/mycheckers/params.proto";
+
+option go_package = "myCheckers/x/mycheckers/types";
+
+// GenesisState defines the mycheckers module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
